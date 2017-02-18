@@ -15,6 +15,10 @@ public class SerialHandler : MonoBehaviour
 	private string message_;
 	private bool isNewMessageReceived_ = false;
 
+	public float X;
+	public float Y;
+	public float Z;
+
 	void Start()
 	{
 		Debug.LogWarning("Start");
@@ -43,16 +47,15 @@ public class SerialHandler : MonoBehaviour
 
 				if (SensorData [5] == d1.SensorIdentity) {
 					
-						float X = float.Parse (XYZ [1]);
-						float Y = float.Parse (XYZ [2]);
-						float Z = float.Parse (XYZ [3]);
+						 X = float.Parse (XYZ [1]);
+						 Y = float.Parse (XYZ [2]);
+						 Z = float.Parse (XYZ [3]);
 
 						//	Debug.Log (XYZ [1] + "X");
 						//	Debug.Log (XYZ [2] + "Y");
 						//	Debug.Log (XYZ [3] + "Z");
 
-						Debug.Log (XYZ [1] + XYZ [2] + XYZ [3]);
-						Debug.Log (SensorData [5]);
+						
 
 
 						transform.rotation = (Quaternion.Euler (X, 0, Y));
