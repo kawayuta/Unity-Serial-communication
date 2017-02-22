@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TW : MonoBehaviour {
-	
+public class BalloonScript : MonoBehaviour {
+
 	public string SensorIdentity;
+
 	// Use this for initialization
 	void Start () {
+
 		SensorIdentity = "10f0519";
 	}
 	
 	// Update is called once per frame
 	void Update () {
+	
+
 		SerialHandler sh = GetComponent<SerialHandler>();
 		Debug.Log (sh.X + sh.Y + sh.Z);
 
@@ -23,6 +27,6 @@ public class TW : MonoBehaviour {
 
 			Debug.Log("パンチ(手:正面)");
 		}
-	
+
 	}
 }

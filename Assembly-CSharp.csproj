@@ -45,8 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BalloonScript.cs" />
      <Compile Include="Assets\SerialHandler.cs" />
      <Compile Include="Assets\TW.cs" />
+     <Compile Include="Assets\balloon.cs" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
